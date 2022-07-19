@@ -1,0 +1,27 @@
+export const customFetch =[
+    {
+        id:1,
+        name:"Stone",
+        price:"$148.78",
+        stock:71,
+    },
+    {
+        id:2,
+        name:"Stone",
+        price:"$185.32","stock":43,"img":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFrSURBVDjLpZO/SmNREMZ/uVxFCGy7L+AjpAgoIUW4hZjCCDZCbCQgVlY+gaDNLghibbmy2EgQTCOp8gaWYmFrpbE4Z+azuPe6UVE2ZGBgzoHz/Zk5U5HELFFZ2/uzu9ysHT2OVZUAd+SOuSEXLkdmuITMMHd+zIfn29uH/YtfGydpbal2PLdQTX4uTEVcfR7bMXCSjoOS8ePT1NJfghKAVCYONhenBtg+vCcHkAOwcwOnTRiNRkjCzHD3TwmQZRnmlgNQTOG0mSPX6/V3TJNTmqw9FgAl0tY1nGUwHA4xM2KMbyom1Uii0+ng5oUFz1HPshy50Wh8yTp59tJCWaxfwt9VMRgMiDG+y48Kut3uWz/SGAKQP5ZEq9X6lrmMGGJhofCyclGhvyb6/T4hBEIIxBgJIXyaQq/XQ6WC8vJqHSCh3W7/1z/wQlH6cHd/vvM7bLgZbv86biWzhNyQFXvhTsF5DlCZdRsTZoxXOgYqlSAcLRcAAAAASUVORK5CYII="},
+    {
+        id:3,name:"Plastic",
+        price:"$124.28",
+        stock:88,
+    },
+    {
+        id:4,name:"Granite",
+        price:"$92.03",
+        stock:38,
+    },
+    {
+        id:5,name:"Brass",
+        price:"$138.56",
+        stock:89,
+    },
+]
