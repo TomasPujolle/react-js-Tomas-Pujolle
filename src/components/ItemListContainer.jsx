@@ -1,28 +1,39 @@
-import React, {useState} from 'react';
+import React, { useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemCount from './ItemCount';
-import products from '../data/MOCK_DATA.json';
+import {products} from '../data/datos';
 import ItemList from './ItemList';
+import { useParams } from 'react-router-dom';
 
-const ItemListContainer = ({ greeting }) => {
+const ItemListContainer = () => {
 
-    const [productList, setproductList] = useState ([])
+    
 
-    const onAdd = (param) => { console.log(param) }
+    const [productList, setproductList] = useState ([]);
 
-    const myPromise = new Promise((resolve, reject) => {
+    const { id } = useParams();
+
+    useEffect(() => {
+      if (id === undefined) {
+        const myPromise = new Promise(resolve => {
+         setTimeout(() => {
+           resolve(products);
+         }, 1000);
+      });
+      myPromise.then(res => setproductList(res));
+    }else{
+      const myPromise = new Promise(resolve => {
         setTimeout(() => {
-          resolve(products);
-        }, 300);
+          resolve(products.filter(product => product.category === id));
+        }, 1000);
       });
-      myPromise.then((res) => {
-        setproductList(res)
-      });
+        myPromise.then(res => setproductList(res));
+      }
+      
+    }, [id])
+  
 
     return (
         <>
-        <div>{greeting}</div>
-        <ItemCount initial={1} stock={5} onAdd={onAdd}/>
         <ItemList items= { productList } />
         </>
     );

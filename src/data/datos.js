@@ -1,27 +1,44 @@
-export const customFetch =[
+export const products =[
     {
         id:1,
-        name:"Stone",
-        price:"$148.78",
+        name:"Espada de madera",
+        price:"$80",
         stock:71,
+        category:"espada",
     },
     {
         id:2,
-        name:"Stone",
-        price:"$185.32","stock":43,"img":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFrSURBVDjLpZO/SmNREMZ/uVxFCGy7L+AjpAgoIUW4hZjCCDZCbCQgVlY+gaDNLghibbmy2EgQTCOp8gaWYmFrpbE4Z+azuPe6UVE2ZGBgzoHz/Zk5U5HELFFZ2/uzu9ysHT2OVZUAd+SOuSEXLkdmuITMMHd+zIfn29uH/YtfGydpbal2PLdQTX4uTEVcfR7bMXCSjoOS8ePT1NJfghKAVCYONhenBtg+vCcHkAOwcwOnTRiNRkjCzHD3TwmQZRnmlgNQTOG0mSPX6/V3TJNTmqw9FgAl0tY1nGUwHA4xM2KMbyom1Uii0+ng5oUFz1HPshy50Wh8yTp59tJCWaxfwt9VMRgMiDG+y48Kut3uWz/SGAKQP5ZEq9X6lrmMGGJhofCyclGhvyb6/T4hBEIIxBgJIXyaQq/XQ6WC8vJqHSCh3W7/1z/wQlH6cHd/vvM7bLgZbv86biWzhNyQFXvhTsF5DlCZdRsTZoxXOgYqlSAcLRcAAAAASUVORK5CYII="},
+        name:"Escudo de madera",
+        price:"$85",
+        stock:43,
+        category:"escudo",
+    },
     {
-        id:3,name:"Plastic",
-        price:"$124.28",
+        id:3,
+        name:"Arco de madera",
+        price:"$125",
         stock:88,
+        category:"arco",
     },
     {
-        id:4,name:"Granite",
-        price:"$92.03",
+        id:4,
+        name:"Espada de hierro",
+        price:"$240",
         stock:38,
+        category:"espada",
     },
     {
-        id:5,name:"Brass",
-        price:"$138.56",
+        id:5,
+        name:"Escudo de hierro",
+        price:"$350",
         stock:89,
+        category:"escudo",
     },
-]
+    {
+        id:6,
+        name:"Arco reforzado",
+        price:"$360",
+        stock:88,
+        category:"arco",
+    },
+];
