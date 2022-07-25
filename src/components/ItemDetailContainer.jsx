@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import ItemDetail from './ItemDetail'
-import ItemCount from './ItemCount';
 import {products} from '../data/datos';
 import { useParams } from 'react-router-dom';
 
@@ -10,7 +9,6 @@ import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
 
-    const onAdd = (param) => { console.log(param) }
 
     const [data, setData] = useState({});
     const { detalleid } = useParams();
@@ -30,7 +28,6 @@ const ItemDetailContainer = () => {
   return (
     <>
     <ItemDetail  data={data}/>
-    <ItemCount initial={1} stock={5} onAdd={onAdd}/>
     </>
   )
 }
