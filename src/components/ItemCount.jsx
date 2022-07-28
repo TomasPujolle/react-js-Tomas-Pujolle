@@ -5,30 +5,24 @@ const ItemCount = ({initial, stock, onAdd}) => {
 
     const [counter, setCounter] = useState(initial);
 
-    const add= () => {
-        if (counter < stock) {
-            const aux = counter+1
-            setCounter(aux);
-        }else{
-            console.log('No hay stock');
-        }
+
+    const decrease = () => {
+        setCounter(counter - 1);
     }
 
-    const subtract = () => {
-        if (counter > initial) {
-            const aux = counter-1
-            setCounter(aux);
-        }
+    const increase = () => {
+        setCounter(counter + 1);
     }
+
 
   return (
     <div>
         <div>
-        <button onClick={ subtract }>-</button>
+        <button disabled={counter <= 1} onClick={ decrease }>-</button>
         <p>{counter}</p>
-        <button onClick={ add }>+</button>
+        <button disabled={counter >= stock} onClick={ increase }>+</button>
         </div>
-        <button onClick={ onAdd }>Agregar al carrito</button>
+        <button disabled={stock <= 0} onClick={ ()=> onAdd(counter) }>Agregar al carrito</button>
     </div>
   )
 }

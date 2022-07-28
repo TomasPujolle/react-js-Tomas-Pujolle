@@ -5,15 +5,16 @@ import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import CartView from './components/CartView';
-
+import  CartContextProvider  from './components/CartContext';
 
 
 
 function App() {
   return (
-    
-      <BrowserRouter>
 
+  <BrowserRouter>
+
+    <CartContextProvider>
         <NavBar />
            <Routes>
               
@@ -22,9 +23,9 @@ function App() {
               <Route path="/detalle/:detalleid" element={<ItemDetailContainer/>} />
               <Route path="/CartView" element={<CartView />} />
             </Routes>
-            
-      </BrowserRouter>
-    
+      </CartContextProvider>
+      
+    </BrowserRouter>
   );
 }
 
