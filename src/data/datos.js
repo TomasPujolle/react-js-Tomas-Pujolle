@@ -24,7 +24,7 @@ export const products =[
         id:4,
         name:"Espada de hierro",
         price:240,
-        stock:38,
+        stock:20,
         category:"espada",
     },
     {
