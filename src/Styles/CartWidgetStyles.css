@@ -1,0 +1,17 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart{
+    color: black;
+    font-size: 2.6em;
+
+}
+
+.Number{
+    color: black;
+    font-size: 1.5em;
+    margin-left: -4rem;
+    margin-right: 5rem;
+}
