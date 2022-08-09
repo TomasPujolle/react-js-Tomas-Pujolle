@@ -51,15 +51,3 @@ export default CartContexProvider;
 
 
 
-
-// setCartList([...cartList, item]
-//let newCart;
-//let product = cartList.find(product => product.id === item.id);
-//if (product) {
-  //  product.quantity += quantity;
-   // newCart = [...cartList];
-//}else {
-//product = {...item, quantity: quantity};
-//newCart = [...cartList, product];
-//}
-//setCartList(newCart);

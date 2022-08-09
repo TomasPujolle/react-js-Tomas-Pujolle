@@ -38,18 +38,3 @@ const ItemListContainer = () => {
 };
 
 export default ItemListContainer;
-
-
-
-
-//const firestoreFetch = async () => {
- // const querySnapshot = await getDocs(collection(db, "products"));
-//  const dataFromFirestore = querySnapshot.docs.map((doc) => ({
- //    id: doc.id,
- //    ...doc.data(),
-//  }))
- // return dataFromFirestore
-//}
-//firestoreFetch()
- //.then(res => setproductList(res))
- //.catch(err => console.log(err))
