@@ -1,0 +1,70 @@
+.contenedorGeneral{
+display: flex;
+background-color: bisque;
+}
+.contenedorProductos{
+display: flex;
+width: 65%;
+justify-content: space-between;
+
+margin: 10px;
+}
+
+.ProductosCart{
+    width: 300px;
+    margin: 10px;
+}
+
+.contenedorTR{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: absolute;
+    left: 1500px;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 250px;
+    background-color: rgb(209, 193, 193);
+    
+
+}
+
+.TRtitulo{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ProductBox{
+   display: inline-block;
+   margin: 30px;
+   
+}
+.imgFullCart{
+    width: 200px;
+    
+}
+
+.TuCarritoText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.contenedorBoton{
+    display: flex;
+    justify-content: center;
+}
+
+
+.botonx{
+   align-items: center;
+   justify-content: center;
+}

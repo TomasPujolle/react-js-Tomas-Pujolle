@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 
 
 
+
 const ItemDetailContainer = () => {
 
 
@@ -22,7 +23,7 @@ const ItemDetailContainer = () => {
 
 
   return (
-    <>
+    < >
     <ItemDetail  data={data}/>
     </>
   )

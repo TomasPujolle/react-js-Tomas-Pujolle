@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { useCartContext } from './CartContext'
 import ItemCart from './ItemCart';
 import  db  from '../firebase/configs'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Styles/CartViewStyles.css'
 
 
 
@@ -42,22 +44,32 @@ const CartView = () => {
 
   if (cartList.length === 0) {
     return (
-      <div>
-        <h1>No hay productos en el carrito</h1>
-        <Link to="/">Realizar Compra</Link>
+      < >
+      <div className='CartViewC'>
+        <h1 className='tituloCartVacio'>No hay productos en el carrito</h1>
+        <Link className='btn btn-success btnComprar' to="/">Realizar Compra</Link>
       </div>
+      </>
     )
   }
 
   return (
   <>
-    {
-      cartList.map(product => <ItemCart key={ product.id } product={ product }/>)
-    }
-    <p>
-      Total: { totalPrice() }
-    </p>
-    <button onClick={buyClick}>Realizar compra</button>
+    <p className="TuCarritoText">Tu Carrito</p>
+    <div className='contenedorGeneral'>
+      <div className='contenedorProductos'>
+    
+      {
+       cartList.map(product => <ItemCart key={ product.id } product={ product }/>)
+      }
+      </div>
+      <div className='contenedorTR'>
+        <p className='TRtitulo'>
+        Total: { totalPrice() }
+       </p>
+        <button className='btn btn-success' onClick={buyClick}>Realizar compra</button>
+        </div>
+    </div>
   </>
   )
 }

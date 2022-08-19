@@ -3,6 +3,8 @@ import { getFirestore, collection, getDocs, query, where } from 'firebase/firest
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
+import "../Styles/CartWidgetStyles.css";
+import "../Styles/Style.css";
 
 
 const ItemListContainer = () => {
@@ -30,9 +32,9 @@ const ItemListContainer = () => {
   
 
     return (
-        <>
+        <div className='fondo'>
         <ItemList items= { productList } />
-        </>
+        </div>
     );
 
 };
